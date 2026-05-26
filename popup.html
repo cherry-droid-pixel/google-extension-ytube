@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+
+    <div class="container">
+
+        <h1>YouTube Focus</h1>
+
+        <p class="subtitle">
+            Stay productive while watching YouTube
+        </p>
+        <div class="stats">
+
+    <div class="stat-box">
+        <h2 id="blockedCount">0</h2>
+        <p>Blocked Today</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 id="focusScore">0%</h2>
+        <p>Focus Score</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 id="streak">0</h2>
+        <p>Study Streak</p>
+    </div>
+
+</div>
+
+
+        <div class="card">
+            <div class="option">
+    <span>Study Mode</span>
+
+    <label class="switch">
+        <input type="checkbox" id="studyMode">
+        <span class="slider"></span>
+    </label>
+</div>
+
+            <div class="option">
+                <span>Hide Shorts</span>
+
+                <label class="switch">
+                    <input type="checkbox" id="shorts">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+
+            <div class="option">
+                <span>Hide Comments</span>
+
+                <label class="switch">
+                    <input type="checkbox" id="comments">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+
+            <div class="option">
+                <span>Hide Recommendations</span>
+
+                <label class="switch">
+                    <input type="checkbox" id="recommend">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+ <div class="analytics">
+
+    <div class="progress-box">
+
+        <p>Educational</p>
+
+        <div class="progress">
+            <div class="edu-bar" id="eduBar"></div>
+        </div>
+
+        <span id="eduText">0%</span>
+
+    </div>
+
+
+    <div class="progress-box">
+
+        <p>Entertainment</p>
+
+        <div class="progress">
+            <div class="fun-bar" id="funBar"></div>
+        </div>
+
+        <span id="funText">0%</span>
+
+    </div>
+
+</div>
+<div class="timer-box">
+
+    <h2 id="timer">25:00</h2>
+
+    <button id="startTimer">
+        Start Focus Session
+    </button>
+
+</div>
+    <script src="popup.js"></script>
+
+</body>
+</html>
